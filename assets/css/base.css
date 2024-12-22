@@ -9,9 +9,9 @@
 }
 
 html{
-    font-size: 62.5%;
-    line-height: 1.6;
-    font-family: "Roboto", sans-serif;
+    /* 10px */
+    font-size: 62.5%;   
+    line-height: 1.6rem;
     box-sizing: border-box;
 }
 
@@ -22,7 +22,7 @@ html{
 }
 
 .grid__full-width{
-    max-width: 100%;
+    width: 100%;
 }
 
 .grid__row{
