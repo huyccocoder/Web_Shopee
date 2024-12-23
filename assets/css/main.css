@@ -20,8 +20,16 @@
     position: relative;
 }
 
+.header__navbar-item:hover,
+.header__navbar-icon--link:hover,
+.header__navbar-item-link:hover{
+    color: #ccc;
+    cursor: pointer;
+}
+
 .header__navbar-item,
-.header__navbar-item-link{
+.header__navbar-item-link,
+.header__navbar-icon--link{
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
@@ -47,4 +55,10 @@
 .header__navbar-icon--link{
     color: #fff;
     text-decoration: none;
+    margin: 0px 4px;
+}
+
+.header__navbar-item--no-pointer{
+    cursor: text;
+    color: var(--white-color);
 }
