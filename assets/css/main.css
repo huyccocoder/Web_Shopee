@@ -1,5 +1,45 @@
 .header{
     height: 120px;
     background-image: linear-gradient( #f6422d, #fd5f32)  ;
-    
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list{
+    list-style-type: none;
+    color: var(--white-color);
+    padding-left: 0;
+    margin-top: 4px;
+}
+
+.header__navbar-item{
+    margin: 0px 8px;
+    position: relative;
+}
+
+.header__navbar-item,
+.header__navbar-item-link{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 200;
+}
+
+.header__navbar-item--bold{
+    font-weight: 600;
+}
+
+.header__navbar-item--seperate::after{
+    content: " ";
+    display: block; 
+    height: 16px;
+    border-left: 1px solid #f96e5c;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
 }
